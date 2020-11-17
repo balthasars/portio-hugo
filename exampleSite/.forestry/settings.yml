@@ -8,9 +8,6 @@ sections:
   path: data/hero.yml
   label: Hero
 - type: document
-  path: data/aboutSection.yml
-  label: About
-- type: document
   path: data/serviceSection.yml
   label: Services
 - type: document
@@ -24,7 +21,9 @@ sections:
   label: Testimonials
 - type: document
   path: data/blogSection.yml
-  label: Blog Section
+- type: document
+  path: data/aboutSection.yml
+  label: About
 - type: directory
   path: content/portfolio
   label: Portfolio

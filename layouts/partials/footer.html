@@ -19,11 +19,11 @@
                       </svg>
                   </div>
                   <div class="contact__cta_content">
-                      <span>Contact me</span>
-                      <h1>Let’s Start a Project</h1>
+                      <span>On y va!</span>
+                      <h1>Und los geht's!</h1>
                   </div>
                   <div class="contact__cta_action">
-                      <a href="{{ .Site.Params.contactLink | absURL }}">Get in touch</a>
+                      <a href="{{ .Site.Params.contactLink | absURL }}">Projektanfrage starten</a>
                   </div>
               </div>
           </div>
@@ -31,10 +31,10 @@
       <div class="row contact__widget">
           <div class="col-lg-4">
               <div class="contact__widget_logo">
-                  <img src="{{ .Site.Params.footerLogo | absURL }}" alt="widget-logo">
+                  <img src="{{ .Site.Params.footerLogo | absURL }}" alt="">
               </div>
           </div>
-          <div class="col-lg-4">
+<!--           <div class="col-lg-4">
               <div class="contact__widget_sitemap">
                   <h3>Sitemap</h3>
                   <ul>
@@ -45,14 +45,14 @@
                   </ul>
               </div>
           </div>
-          <div class="col-lg-4">
+ -->          <div class="col-lg-4">
               <div class="contact__widget_address">
-                  <h3>Address</h3>
+                  <h3>Hier erreichst Du mich:  </h3>
                   {{ $address := .Site.Params.address }}
                   <ul>
-                      <li><a href="tel:{{ $address.phone }}"><i class="fa fa-phone"></i>{{ $address.phone }}</a></li> 
-                      <li><a href="mailto:{{ $address.email }}"><i class="fa fa-envelope"></i>{{ $address.email }}</a></li>
-                      <li><p><i class="fa fa-map-marker"></i>{{ $address.address }}</p></li>
+                      <!-- <li><a href="tel:{{ $address.phone }}"><i class="fa fa-phone"></i>{{ $address.phone }}</a></li>  -->
+                      <li><p>{{ $address.email }}</p></li>
+                      <li><p>{{ $address.address }}</p></li>
                   </ul>
               </div>
           </div>
@@ -63,7 +63,7 @@
                   <p>{{ .Site.Params.copyright }}</p>
               </div>
           </div>
-          <div class="col-lg-6">
+<!--           <div class="col-lg-6">
               <div class="contact__footer_social">
                   <ul>
                       <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
@@ -73,12 +73,15 @@
                   </ul>
               </div>
           </div>
-      </div>
+ -->      </div>
   </div>
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry"></script>
+ -->
 <script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
-<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<!-- <script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+ -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
 <script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
 <script src="{{ "plugins/waypoint/jquery.waypoints.min.js" | absURL }}"></script>

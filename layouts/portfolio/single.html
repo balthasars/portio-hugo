@@ -41,7 +41,7 @@
         <div class="case-details-title">
           <h1>{{ .Title }}</h1>
         </div>
-        <p>
+<!--         <p>
           {{ .Params.shortDescription }}
         </p>
         <div class="case-details-info">
@@ -76,11 +76,14 @@
             </div>
           </div>
         </div>
-        <div class="case-details-thumb">
+ -->        <div class="case-details-thumb">
           <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
         </div>
-        {{ .Content }}
-      </div>
+
+        <!-- Hier kommt Portfoliotext hin  -->
+
+<!--         {{ .Content }}
+ -->      </div>
     </div>
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
@@ -107,12 +110,12 @@
               </svg>
             </div>
             <div class="content">
-              <span>Prev case</span>
+              <span>Vorheriges Arbeitsbeispiel</span>
               <h5 class="title"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h5>
             </div>
           </div>
           {{ end }}
-          <div class="social">
+<!--           <div class="social">
             {{ $url := printf "%s" .Permalink | absLangURL }}
             <ul>
               <li>
@@ -126,10 +129,10 @@
               </li>
             </ul>
           </div>
-          {{ if .NextInSection }}
+ -->          {{ if .NextInSection }}
           <div class="next">
             <div class="content">
-              <span>Next case</span>
+              <span>Nächstes Arbeitsbeispiel</span>
               <h5 class="title">
                 <a href="{{ .NextInSection.Permalink }}"
                   >{{ .NextInSection.Title }}</a

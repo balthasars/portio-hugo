@@ -5,7 +5,7 @@
                 <div class="row text-center">
                     <div class="col-lg-6 offset-lg-3">
                         <div class="about_header">
-                            <span>About</span>
+                            <!-- <span>About</span> -->
                             <h1> {{ .title }} </h1>
                             <p> {{ .subtitle }} </p>
                         </div>
@@ -16,7 +16,7 @@
                         <div class="about_content">
                             <div class="about_content-thumb">
                                 <div class="about-svg">
-                                    <img src="images/hero/figure-svg.svg" alt="figure-svg">
+                                    <img src="images/hero/figure-svg.svg" alt="">
                                 </div>
                                 <div class="about_content-thumb-image">
                                     <img src="{{ .image | absURL }}" alt="about-img" style='-webkit-mask: url({{"images/about/about-mask-svg.svg" | absURL}}); -webkit-mask-size: contain;'>
@@ -40,7 +40,7 @@
                                 <p>{{ .content }}</p>
                                 <ul>
                                     <li><a class="active" href="{{ .button1Target | absURL }}">{{ .button1Name }}</a></li>
-                                    <li><a href="{{ .button2Target | absURL }}"> {{ .button2Name }} </a></li>
+                                    <!-- <li><a href="{{ .button2Target | absURL }}"> {{ .button2Name }} </a></li> -->
                                 </ul>
                             </div>
                         </div>

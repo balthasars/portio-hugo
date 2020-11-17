@@ -121,7 +121,7 @@ $(document).ready(function () {
               Counter: $(this).text(),
             },
             {
-              duration: 3000,
+              duration: 100,
               easing: "swing",
               step: function (now) {
                 $(this).text(Math.ceil(now));
@@ -132,7 +132,7 @@ $(document).ready(function () {
       $(".skill__progress_item").addClass("js-animation");
       this.destroy();
     },
-    { offset: "80%" }
+    { offset: "90%" }
   );
 
   // Testimonial slider
